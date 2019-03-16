@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/njons/cupboard/issues"
   },
-  "homepage": "https://github.com/njons/cupboard#readme"
+  "homepage": "https://github.com/njons/cupboard#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "nodemon": "^1.18.10"
+  }
 }
