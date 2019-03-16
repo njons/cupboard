@@ -1,8 +1,15 @@
 const express = require("express");
+const path = require("path");
 const app = express();
 
+app.set("view engine", "pug");
+app.set("views", path.join(__dirname, "views"));
 app.use(express.static("public"));
 
-app.listen(6000, () => {
-  console.log("server is up and running on port 6000");
+app.get("/", (req, res) => {
+  res.render("index");
+});
+
+app.listen(3000, () => {
+  console.log("server is up and running on port 3000");
 });
