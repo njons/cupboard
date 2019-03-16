@@ -6,8 +6,7 @@ html(lang='en')
     link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700")
     title Cupboard API
   body
-    h1 Cupboard full of stuff
-    p explanation of what's on here:
+    h1.title What's in the cupboard?
     ul 
     each item in items
       li #{item.name}, #{item.amount} #{item.unit}, available: #{item.available}
