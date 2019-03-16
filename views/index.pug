@@ -7,4 +7,7 @@ html(lang='en')
     title Cupboard API
   body
     h1 Cupboard full of stuff
-    p long paragraph relating to the future page
+    p explanation of what's on here:
+    ul 
+    each item in items
+      li #{item.name}, #{item.amount} #{item.unit}, available: #{item.available}
