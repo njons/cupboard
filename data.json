@@ -1,0 +1,40 @@
+/* SCHEMA:
+TABLE items
+  | id          | num *unique |
+  | name        | varchar()   |
+  | amount      | varchar()   |
+  | unit        | varchar()   |
+  | available   | bool        |
+
+
+  | FK: recipes | recipe_id   |
+*/
+
+{
+  "items": [
+    {
+      "cucumber": {
+        "id": "1",
+        "amount": "200",
+        "unit": "grams",
+        "available": false
+      }
+    },
+    {
+      "tomato": {
+        "id": "2",
+        "amount": "600",
+        "unit": "grams",
+        "available": true
+      }
+    },
+    {
+      "milk": {
+        "id": "3",
+        "amount": "1",
+        "unit": "L",
+        "available": true
+      }
+    }
+  ]
+}
